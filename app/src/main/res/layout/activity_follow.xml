@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/nn"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="     Follow notifications "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        tools:ignore="WebViewLayout" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="กลับไปยังเมนู" />
+
+    <Button
+        android:id="@+id/data"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="ดูข้อมูล" />
+
+</LinearLayout>
+
+
+</LinearLayout>
