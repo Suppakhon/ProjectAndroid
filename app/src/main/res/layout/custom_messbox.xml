@@ -28,8 +28,16 @@
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="##ขอบคุณสำหรับการให้คะแนนครับ##"
+        android:text="#############"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/ok"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ส่งผลคะแนน" />
 
 </LinearLayout>

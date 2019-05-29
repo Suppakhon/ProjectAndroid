@@ -9,6 +9,7 @@
     app:ignore="NamespaceTypo">
 
     <LinearLayout
+
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -56,14 +57,16 @@
                 android:layout_rowWeight="1"
                 android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
-                app:cardelevation="60dp">
+                app:cardelevation="60dp"
+                >
 
                 <LinearLayout
                     android:id="@+id/qrcode"
-                    android:onClick="onClick"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@drawable/cycle"
                     android:gravity="center"
+                    android:onClick="onClick"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -91,6 +94,7 @@
                 app:cardelevation="60dp">
 
                 <LinearLayout
+                    android:background="@drawable/cycle"
                     android:id="@+id/add"
                     android:onClick="onClick"
                     android:layout_width="match_parent"
@@ -135,25 +139,38 @@
 
                 <LinearLayout
                     android:id="@+id/follow"
-                    android:onClick="onClick"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="129dp"
+                    android:background="@drawable/cycle"
                     android:gravity="center"
+                    android:onClick="onClick"
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/f" />
-
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="          Follow       "
-                        android:textColor="#666161"
-                        android:textSize="18dp" />
+                        android:id="@+id/textView9"
+                        android:layout_width="81dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Follow"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="450dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="93dp"
+                        android:layout_height="79dp"
+                        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+                        app:srcCompat="@drawable/add"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="339dp" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -166,6 +183,7 @@
                 app:cardelevation="60dp">
 
                 <LinearLayout
+                    android:background="@drawable/cycle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -201,10 +219,11 @@
             android:rowCount="3">
 
         </GridLayout>
+
         <GridLayout
 
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
+            android:layout_width="371dp"
+            android:layout_height="178dp"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             android:rowCount="3">
@@ -218,11 +237,12 @@
                 app:cardelevation="60dp">
 
                 <LinearLayout
+                    android:background="@drawable/cycle"
                     android:id="@+id/point"
-                    android:onClick="onClick"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:onClick="onClick"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -247,30 +267,23 @@
                 android:layout_rowWeight="1"
                 android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
-                app:cardelevation="60dp">
+                app:cardelevation="60dp" />
 
-                <LinearLayout
-                    android:onClick="onClick"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@drawable/lock" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="    ยังไม่มีคำสั่ง    "
-                        android:textColor="#666161"
-                        android:textSize="18dp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="132dp"
+                android:layout_height="130dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="bottom"
+                android:background="@drawable/cycle"
+                android:text="Log out"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="405dp" />
 
 
         </GridLayout>

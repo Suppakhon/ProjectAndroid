@@ -29,7 +29,7 @@ public class Follow extends AppCompatActivity implements View.OnClickListener {
             case R.id.data:
                 webView  = (WebView)findViewById(R.id.web);
                 webView.setWebViewClient(new WebViewClient());
-                webView.loadUrl("https://www.youtube.com");
+                webView.loadUrl("https://docs.google.com/spreadsheets/d/1ECmjsJziTvSvHnyFNhMcoKH4MJJph3K2Mgl-bevf-OE/edit#gid=0");
                 WebSettings webSettings = webView.getSettings();
                 webSettings.setJavaScriptEnabled(true);
                 break;
